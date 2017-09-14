@@ -1,0 +1,32 @@
+==========================
+Flag Problem
+APCS Period 4, 2017
+Due: 9/7/2017
+==========================
+by: Sophia Vera
+
+Introduction
+------------
+	This project creates a picture of an American Flag inside of a JApplet.  This JApplet can then be scaled and have the flag adjust its size accordingly to fit the new boundaries.  This is achieved through the use of Java's awt library for the colors and graphics, and Java's swing library for the use of JApplet.
+
+Fulfillments of Specifications
+------------------------------
+	As stated before, the goal for this project was to create a scalable United States flag inside of a JApplet. This project fulfills those requirements.  It also follows the correct dimensions of the flag, as seen in acknowledgments.
+
+
+Overview
+--------
+	The prompt of the project meant that it needed two main components: the classes for drawing the figures on the flag and the ability to change the size of the flag. I achieved this by first creating a scalable JApplet, called AmericanFlag, that would modify the proper dimensions of the flag when the JApplet size was changed. It would then feed those new values into a class called Flag, which would further distribute them to more specialized classes. Because of this, I only had to distribute a couple variables through the classes, which I believe kept my code shorter and more concise. Inside of Flag, there exists an object of Stars and an object of Stripes. Each of these contains subclasses called Star and Stripes. These subclasses are responsible for drawing an individual star or stripe, whereas Stars and Stripes draw the set. This is all for the purpose of encapsulation. The subclasses are also mainly responsible for doing to mathematics needed to derive the correct points of a component based on the width and height of the entire flag.
+	
+Current Errors
+--------------
+	This project does achieve a working United States flag in java. It can be scaled according to the size of the JApplet it's contained in.  The only error to note is that speed can be a factor in the flag's appearance. If the flag is scaled too quickly, it can become mismatched with the size of the JApplet. However, this is not due to the flag's code, rather the paint method in the Container class is too slow to catch up to the user's movements.
+
+Challenges Encountered
+----------------------
+	The major challenge I faced was trying to decide on a code structure before I started actually creating the classes.  I considered creating something with a lot less classes, however, I decided on this version because I felt it would be more comprehendable to anyone trying to read and understand it.
+
+Acknowledgments
+---------------
+Specifications for the size of the flag and its components: http://www.usflag.org/flag.specs.html
+Color converter for red and and blue given by previous link: http://www.usps.org/national/itcom/shared/help/colors.html
