@@ -1,4 +1,3 @@
-// this is a random comment
 //future me,
 //remember to put documentation!
 public class Conjunction extends LogicalSentence{
