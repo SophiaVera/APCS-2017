@@ -1,1 +1,32 @@
-Readme
+==========================
+Logic Sentence Puzzle
+APCS Period 4, 2017
+Due: 9/14/2017
+==========================
+by: Sophia Vera
+
+Introduction
+------------
+	This is the logic sentence puzzle.  Its purpose was to create a classes and methods based on a main().  These classes would then interact to make logical expression that could be evaluated, and then modified with operators.
+
+Fulfillments of Specifications
+------------------------------
+	I did my best to conform to the instructions of this project, even though many of them were quite constraining.  I actually made a small edit in the main class because, if i hadn’t, I would have been forced to create a three layered function that could literally be done in one step.  My code does, however, execute properly.
+
+Overview
+--------
+This code contains 9 classes: LogicalSentence, PropositionConstant,TruthAssignment, Legal, Negation, Conjunction, Disjunction, Implication and Biconditional.  The class used the most in the code is LogicalSentence, as the previous five all extend it.  LogicalSentence itself contains a PropositionConstant, which holds the original string (either a or b in main).  Through the hashmap in TruthAssignment, they all also have a boolean value. The operators modify the boolean value of the LegalSentence they are constructed with.
+		
+Current Errors
+--------------
+	As far as I am aware, there are no current errors with this project.
+
+Challenges Encountered
+----------------------
+	The major challenge I had was conforming to the main() method that was given to me. This was especially true with the TruthAssignment class, because for the longest time I was unsure of its purpose.  Even in my final version, I still believe it would have been much more effective to simply create a hashmap directly inside of main rather than creating a new class entirely for this.
+
+Acknowledgments
+---------------
+The Stanford course that I used for the definitions of my classes:
+http://logic.stanford.edu/intrologic/lessons/lessons.html
+
