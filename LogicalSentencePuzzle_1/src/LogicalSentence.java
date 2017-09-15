@@ -56,21 +56,26 @@ public class LogicalSentence {
 	}
 	
 	/**
-	 * 
+	 * Findmatch returns the index of the rightmost character in the first
+	 *  substring of the argument that is enclosed by matching parens and which contains no parens.
 	 * @param string - the logical expression being searched in
 	 * @param number - unused int for recursiveness
 	 * @return  the index of the rightmost character i enclosed by matching parens and which contains no parens.
 	 */
 	public static int findMatch(String string, int number){
-		boolean openParens = false; //whether index is currently in parentheses
+		//whether index is currently in parentheses
+		boolean openParens = false;
 		for (int i = 0; i < string.length(); i++) {
 			char letter = string.charAt(i);
 			if (letter == '(') {
 				openParens = true;
 			} 
 			else if (letter == ')') {
-                if (openParens) {
+                if (openParens && string.charAt(i-1) != '(') {//the function shouldn't output a parentheses
                     return i-1;
+                }
+                else if (string.charAt(i-1) == '('){
+                	continue;
                 }
                 //There shouldn't be a case where theres a closing parentheses without an open one
                 return -1; 
