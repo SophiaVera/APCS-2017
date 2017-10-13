@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Intro/src"/>
+	<classpathentry kind="src" path="LogicalSentencePuzzle/src"/>
+	<classpathentry kind="src" path="USFlag/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Intro/bin"/>
+</classpath>
