@@ -1,1 +1,27 @@
+-----------------------------------------------------------------
+Think AP Java Chapter Chapter 15 problems  <br />
+AP Computer Science Period 4  <br />
+10/19/2017  <br />
+Sophia Vera
+-----------------------------------------------------------------
+(https://github.com/SophiaVera/APCS-2017/edit/master/APChapter15 is where this project is located)
+
+Basic code Overview: 
+(as this isn't a full on project, but just exercises, a full length README seems rather pretentious)
+This project is effectively four main exercises: Rational, Complex, CardSoln2, and CardSoln3.  Each of these work individually.  They were intended to follow the promps from the Think AP Java textbook (see acknoledgements). Rational is a basic class that has two variables and represents a fraction.  Complex is relatively similar, but has two variables for a real and imaginary term instead.  They both have simple methods as well.  CardSoln2, which fairly close to being exactly like Mr Downey's code simply has different switched static and non-static methods. I modified CardSoln3 to add an aspect of Poker to the project, which before was simply like a normal card game.  I did this by creating the class PokerHand, which represents the cards a person holds in poker and the accompynying methods for finding poker hands with names.
+
+Errors:
+Firstly, this project has a lot of errors with margins, but this was the way Mr Downey wrote it and I didn't wan't to overly modify it.  Also, because some of the classes are named the same thing, the compiler errors, but yet again, I didn't think it would be appropriate to completely change the previous code. Another thing I faced was, though not really an error, a design choice on deal() in CardSoln3.  The prompt makes it seem like one litteraly draws (and removes) cards from a deck.  However, the next problem asked to draw thousands of cards, which is mathmatically impossible, so I decided to make drawn cards not disappear from the deck.
+
+Acknoledgements:
+Original code from Allen Downey, without modifications: https://github.com/AllenDowney/thinkjava5/tree/master/code/Cards
+Text for problems: http://www.greenteapress.com/thinkapjava/thinkapjava.pdf
+Information on Poker:http://en.wikipedia.org/wiki/List_of_poker_hands.
+
+Questions:
+15.1 Personally, I prefer it as a static class method because it simply makes more logical sense.  To merge two objects seems like it should be conducted by an external force, rather than by one of the objects that is itself being merged.
+
+15.4.2 I experimented a bit with changing methods from static to non-static and the other way around.  To me, it seems like there is usually a fairly clear answer to which method is better, depending on the situation.  Generally, whenever I changed something, it immediately errored and made me go through more work than I needed, even though it worked in the first place.  There were, a couple cases where it didn't really affect anything, but at this point there was usually one that logically made more sense because of context.
+
+15.4.2 Object methods and class methods aren't never inherently better than one another, its all based on circumstance.  Of course, in any case where computation modifies a variable in an object, a class method shouldn't be used.  And generally, its better to store algorithms that don't depend on object attributes as a class method.  A class method can generally decrease the length of a method invocation.
 
